@@ -60,7 +60,7 @@ function eventICS(event)
 		'RRULE:FREQ=WEEKLY;UNTIL=20140420T230000Z\n'+
 		//'DTSTAMP:20140108T222220Z\n'+
 		'DESCRIPTION:\n'+
-		'LOCATION:Mohawk College\n'+
+		'LOCATION:'+event.location+'\n'+
 		'SUMMARY:'+event.course+'\n'+
 		'TRANSP:OPAQUE\n'+
 	'END:VEVENT\n';	
@@ -203,5 +203,12 @@ function findDay(course,days)
 			window.open( "data:text/calendar;charset=utf8," + escape(ics));
 		})();
 	}
+
+
+
+
+
+
+
 })();
 

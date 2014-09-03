@@ -203,12 +203,5 @@ function findDay(course, days)
             window.open("data:text/calendar;charset=utf8," + escape(ics));
         })();
     }
-
-
-
-
-
-
-
 })();
 

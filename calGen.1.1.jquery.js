@@ -2,7 +2,7 @@ function createICS(classes) {
     var events = '';
 
     // Events will be created repeating until this date
-    var repeatUntil = '20141221T230000Z';
+    var repeatUntil = '20150417T230000Z';
         
     $.each(classes, function(index, val) {
         events += eventICS(val,repeatUntil);
